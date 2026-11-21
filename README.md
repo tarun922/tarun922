@@ -201,28 +201,18 @@ scroll-driven 3D sakura animation.
 
 <img src="./assets/divider.svg" width="100%" />
 
-## 🐍 Contribution Snake
+## 🌙 Sakura Night
 
-<img src="https://raw.githubusercontent.com/tarun922/tarun922/output/github-snake-dark.svg" width="100%" />
+<img src="./assets/scene.svg" width="100%" />
 
 <img src="./assets/divider.svg" width="100%" />
 
 ## 🗺️ Currently On
 
-```text
-Seeky + Seeky.Anim
-   ↓
-Buddy.live (getting it out there)
-   ↓
-AI chat app with bring-your-own-key
-   ↓
-Anime compositing tools
-   ↓
-More open source 🌸
-```
+<img src="./assets/roadmap.svg" width="100%" />
 
 <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" />
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d0d0d,50:ff8fb8,100:00f5ff&height=120&section=footer" width="100%" />
+<img src="./assets/footer.svg" width="100%" />
 
 </div>
