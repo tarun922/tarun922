@@ -14,7 +14,7 @@
 
 <img src="./assets/divider.svg" width="100%" />
 
-## 🌸 About Me
+<img src="./assets/heading-about.svg" alt="About Me" width="100%" />
 
 </div>
 
@@ -44,7 +44,7 @@ const tarun = {
 
 <img src="./assets/divider.svg" width="100%" />
 
-## 💻 Tech Stack
+<img src="./assets/heading-stack.svg" alt="Tech Stack" width="100%" />
 
 **🧑‍💻 Languages**
 
@@ -77,7 +77,7 @@ const tarun = {
 
 <img src="./assets/divider.svg" width="100%" />
 
-## 🚀 Projects
+<img src="./assets/heading-projects.svg" alt="Projects" width="100%" />
 
 <table>
 <tr>
@@ -184,7 +184,7 @@ scroll-driven 3D sakura animation.
 
 <img src="./assets/divider.svg" width="100%" />
 
-## 📊 GitHub Stats
+<img src="./assets/heading-stats.svg" alt="GitHub Stats" width="100%" />
 
 <img height="180" src="https://github-readme-stats.shion.dev/api?username=tarun922&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&show_icons=true" />
 <img height="180" src="https://github-readme-stats.shion.dev/api/top-langs/?username=tarun922&theme=tokyonight&hide_border=true&layout=compact" />
@@ -201,17 +201,21 @@ scroll-driven 3D sakura animation.
 
 <img src="./assets/divider.svg" width="100%" />
 
-## 🌙 Sakura Night
+<img src="./assets/heading-night.svg" alt="Sakura Night" width="100%" />
 
 <img src="./assets/scene.svg" width="100%" />
 
 <img src="./assets/divider.svg" width="100%" />
 
-## 🗺️ Currently On
+<img src="./assets/heading-current.svg" alt="Currently On" width="100%" />
 
 <img src="./assets/roadmap.svg" width="100%" />
 
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" />
+<img src="./assets/divider.svg" width="100%" />
+
+<img src="./assets/heading-quote.svg" alt="My Quote" width="100%" />
+
+<img src="./assets/quote.svg" alt="Sometimes it's hard to find peace, in the most peaceful place. ~ Tarun" width="100%" />
 
 <img src="./assets/footer.svg" width="100%" />
 
