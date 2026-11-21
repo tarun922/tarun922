@@ -1,0 +1,121 @@
+<svg width="1000" height="320" viewBox="0 0 1000 320" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:c2pa="http://c2pa.org/manifest">
+  <defs>
+    <clipPath id="card">
+      <rect width="1000" height="320" rx="18"/>
+    </clipPath>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a0f1f"/>
+      <stop offset="0.55" stop-color="#1a1b3a"/>
+      <stop offset="1" stop-color="#3a2150"/>
+    </linearGradient>
+    <linearGradient id="lake" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1c1a44"/>
+      <stop offset="1" stop-color="#070918"/>
+    </linearGradient>
+    <radialGradient id="moonGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff1f6" stop-opacity="0.9"/>
+      <stop offset="0.5" stop-color="#ffb8d2" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#ff8fb8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="txt" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffd1e3"/>
+      <stop offset="1" stop-color="#bff9ff"/>
+    </linearGradient>
+    <filter id="glow" x="-200%" y="-200%" width="500%" height="500%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <path id="petal" fill="#ffb3cf" d="M0,-8 C5,-10 10,-4 8,2 C7,6 3,9 0,6 C-3,9 -7,6 -8,2 C-10,-4 -5,-10 0,-8Z"/>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <!-- sky -->
+    <rect width="1000" height="320" fill="url(#sky)"/>
+
+    <!-- stars -->
+    <g fill="#ffffff">
+      <circle cx="90" cy="40" r="1.4"><animate attributeName="opacity" values="0.2;1;0.2" dur="3s" repeatCount="indefinite"/></circle>
+      <circle cx="210" cy="70" r="1.2"><animate attributeName="opacity" values="1;0.2;1" dur="4s" repeatCount="indefinite"/></circle>
+      <circle cx="330" cy="30" r="1.6"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.7s" repeatCount="indefinite"/></circle>
+      <circle cx="470" cy="55" r="1.2"><animate attributeName="opacity" values="1;0.3;1" dur="3.6s" repeatCount="indefinite"/></circle>
+      <circle cx="620" cy="28" r="1.6"><animate attributeName="opacity" values="0.2;1;0.2" dur="4.4s" repeatCount="indefinite"/></circle>
+      <circle cx="950" cy="60" r="1.3"><animate attributeName="opacity" values="1;0.2;1" dur="3.2s" repeatCount="indefinite"/></circle>
+      <circle cx="40" cy="130" r="1.2"><animate attributeName="opacity" values="0.3;1;0.3" dur="5s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <!-- moon -->
+    <circle cx="840" cy="85" r="95" fill="url(#moonGlow)">
+      <animate attributeName="r" values="90;102;90" dur="7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="840" cy="85" r="34" fill="#fff1f6" opacity="0.95"/>
+    <circle cx="828" cy="76" r="5" fill="#ffd9e8" opacity="0.6"/>
+    <circle cx="850" cy="96" r="7" fill="#ffd9e8" opacity="0.5"/>
+
+    <!-- mountains -->
+    <path d="M0,235 L110,200 L210,228 L330,185 L450,232 L560,205 L680,236 L790,198 L900,230 L1000,208 L1000,260 L0,260Z" fill="#1a1840"/>
+    <path d="M0,252 L140,224 L260,247 L400,220 L520,252 L650,228 L780,252 L900,226 L1000,247 L1000,262 L0,262Z" fill="#10102a"/>
+
+    <!-- lake -->
+    <rect x="0" y="252" width="1000" height="70" fill="url(#lake)"/>
+    <ellipse cx="840" cy="286" rx="30" ry="8" fill="#fff1f6" opacity="0.35">
+      <animate attributeName="opacity" values="0.2;0.5;0.2" dur="4s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- ripples -->
+    <ellipse cx="840" cy="286" rx="20" ry="3" fill="none" stroke="#ffd1e3" stroke-width="1.2">
+      <animate attributeName="rx" values="20;110" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="ry" values="3;14" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0" dur="5s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="840" cy="286" rx="20" ry="3" fill="none" stroke="#ffd1e3" stroke-width="1.2">
+      <animate attributeName="rx" values="20;110" dur="5s" begin="2.5s" repeatCount="indefinite"/>
+      <animate attributeName="ry" values="3;14" dur="5s" begin="2.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0" dur="5s" begin="2.5s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- fireflies -->
+    <g filter="url(#glow)">
+      <circle r="2.2" fill="#fff6b0"><animate attributeName="cx" values="110;150;100;110" dur="9s" repeatCount="indefinite"/><animate attributeName="cy" values="255;225;240;255" dur="9s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0.3;1;0" dur="9s" repeatCount="indefinite"/></circle>
+      <circle r="1.8" fill="#b8fff0"><animate attributeName="cx" values="260;230;280;260" dur="11s" repeatCount="indefinite"/><animate attributeName="cy" values="270;245;255;270" dur="11s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0.4;1;0" dur="11s" repeatCount="indefinite"/></circle>
+      <circle r="2.4" fill="#fff6b0"><animate attributeName="cx" values="380;410;370;380" dur="8s" repeatCount="indefinite"/><animate attributeName="cy" values="265;235;250;265" dur="8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0.2;1;0" dur="8s" repeatCount="indefinite"/></circle>
+      <circle r="1.8" fill="#ffd1e3"><animate attributeName="cx" values="520;490;540;520" dur="12s" repeatCount="indefinite"/><animate attributeName="cy" values="272;248;260;272" dur="12s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0.3;1;0" dur="12s" repeatCount="indefinite"/></circle>
+      <circle r="2.2" fill="#b8fff0"><animate attributeName="cx" values="640;670;630;640" dur="10s" repeatCount="indefinite"/><animate attributeName="cy" values="262;232;246;262" dur="10s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0.3;1;0" dur="10s" repeatCount="indefinite"/></circle>
+      <circle r="1.6" fill="#fff6b0"><animate attributeName="cx" values="720;700;745;720" dur="9.5s" repeatCount="indefinite"/><animate attributeName="cy" values="275;250;262;275" dur="9.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0.4;1;0" dur="9.5s" repeatCount="indefinite"/></circle>
+      <circle r="2.2" fill="#ffd1e3"><animate attributeName="cx" values="930;900;945;930" dur="11.5s" repeatCount="indefinite"/><animate attributeName="cy" values="268;238;252;268" dur="11.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0.3;1;0" dur="11.5s" repeatCount="indefinite"/></circle>
+      <circle r="1.8" fill="#fff6b0"><animate attributeName="cx" values="60;85;55;60" dur="13s" repeatCount="indefinite"/><animate attributeName="cy" values="290;262;275;290" dur="13s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0.3;1;0" dur="13s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <!-- drifting petals -->
+    <g>
+      <g><animateTransform attributeName="transform" type="translate" from="150 -20" to="210 340" dur="14s" begin="-3s" repeatCount="indefinite"/>
+        <g transform="scale(1)"><use xlink:href="#petal" opacity="0.7"><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="6s" repeatCount="indefinite"/></use></g></g>
+      <g><animateTransform attributeName="transform" type="translate" from="450 -20" to="400 340" dur="17s" begin="-9s" repeatCount="indefinite"/>
+        <g transform="scale(0.8)"><use xlink:href="#petal" opacity="0.6"><animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="7s" repeatCount="indefinite"/></use></g></g>
+      <g><animateTransform attributeName="transform" type="translate" from="700 -20" to="760 340" dur="15s" begin="-6s" repeatCount="indefinite"/>
+        <g transform="scale(1.2)"><use xlink:href="#petal" opacity="0.7"><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="5s" repeatCount="indefinite"/></use></g></g>
+      <g><animateTransform attributeName="transform" type="translate" from="930 -20" to="880 340" dur="18s" begin="-12s" repeatCount="indefinite"/>
+        <g transform="scale(0.9)"><use xlink:href="#petal" opacity="0.65"><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="6.5s" repeatCount="indefinite"/></use></g></g>
+    </g>
+
+    <!-- quote marks -->
+    <text x="70" y="140" font-family="Georgia, 'Times New Roman', serif" font-size="120" fill="#ff8fb8" opacity="0.45">&#8220;</text>
+    <text x="880" y="205" font-family="Georgia, 'Times New Roman', serif" font-size="120" fill="#00f5ff" opacity="0.35">&#8221;</text>
+
+    <!-- quote text -->
+    <text x="500" y="108" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="33" fill="url(#txt)" opacity="0">
+      Sometimes it&#8217;s hard to find peace,
+      <animate attributeName="opacity" from="0" to="1" dur="1.6s" begin="0.4s" fill="freeze"/>
+    </text>
+    <text x="500" y="154" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="33" fill="url(#txt)" opacity="0">
+      in the most peaceful place.
+      <animate attributeName="opacity" from="0" to="1" dur="1.6s" begin="1.6s" fill="freeze"/>
+    </text>
+    <text x="500" y="192" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="15" letter-spacing="5" fill="#00f5ff" opacity="0">
+      ~ Tarun
+      <animate attributeName="opacity" from="0" to="0.9" dur="1.4s" begin="2.8s" fill="freeze"/>
+    </text>
+  </g>
+<metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTpmZGY5NWE3MS01ZjkxLTRjMjgtOWQ1OS0yYjk3YzhjYzRjMmMAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaDmfHUuhS2ArRJFjbHyw9IYAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDozMWJiZTZlOS05MGY2LTQxOTQtYWRlNy1kNzAzZjc4YzhiZTNscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNo4vgWqmGVa7v91z6tLWrmLwAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggmtTxPz74/Fw1TyNZ9bv6a3r+8zcUwRZpSsCzng005XWkZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaI4gytVpYycR9QyJINRM75sAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYIL0LGUPr+LFcyovE1VNzJhVxJudz3k2UgZ+b0TBr4GJEZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GSV8Zmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOmZkZjk1YTcxLTVmOTEtNGMyOC05ZDU5LTJiOTdjOGNjNGMyYy9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOmM1NGZhMGM3LTkyYmQtNGMxNC1hNDczLTU0OWY1ODVmMGE4YXJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCCa1PE/Pvj8XDVPI1n1u/prev7zNxTBFmlKwLOeDTTldaJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFgg/2pENxPuE/NJdK7GjNUja5JU1koekcl2J3o4i9aGAcyiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFgghqu18SD9KgdKWHE9CRaEcs5CErIgppZVTyRnHMLrNPB0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQJb/NdW89kocJ6I7PrB5S4N1vfnJY4dY5IxsOs1v3vlqm+2sXhbu0he4d7NxHHSKk6bGBueCRQTanWeEPWdm3lc=</c2pa:manifest></metadata></svg>
