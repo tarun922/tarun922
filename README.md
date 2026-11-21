@@ -1,92 +1,71 @@
 <div align="center">
 
-![header](https://capsule-render.vercel.app/api?type=waving&color=0:0d0d0d,50:ff8fb8,100:00f5ff&height=220&section=header&text=Tarun&fontSize=70&fontColor=ffffff&fontAlignY=38&desc=%F0%9F%8C%B8%20builder%20%E2%80%A2%20vibe%20coder%20%E2%80%A2%20anime%20enjoyer%20%F0%9F%8C%B8&descAlignY=60&descSize=16&animation=fadeIn)
+<img src="./assets/banner.svg" alt="Tarun" width="100%" />
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Press+Start+2P&size=13&pause=1000&color=00F5FF&center=true&vCenter=true&width=700&lines=Full-Stack+Developer+%F0%9F%92%BB;Building+Apps+With+AI+%E2%9A%A1;Electron+%7C+Android+%7C+Web+%7C+CLI+%F0%9F%9A%80;Making+Things+Look+Kawaii+%F0%9F%8C%B8;Fedora+Linux+Enjoyer+%F0%9F%90%A7)](https://git.io/typing-svg)
 
+![Views](https://komarev.com/ghpvc/?username=tarun922&color=ff8fb8&style=for-the-badge&label=PROFILE+VIEWS)
+![Followers](https://img.shields.io/github/followers/tarun922?style=for-the-badge&color=00f5ff&labelColor=0d0d0d&logo=github)
+![Stars](https://img.shields.io/github/stars/tarun922?style=for-the-badge&color=ff8fb8&labelColor=0d0d0d&logo=github)
+
+<a href="https://github.com/tarun922"><img src="https://skillicons.dev/icons?i=github&theme=dark" /></a>
+<a href="https://tarun922.github.io/seeky"><img src="https://img.shields.io/badge/Seeky-ff8fb8?style=for-the-badge&logo=musicbrainz&logoColor=white" /></a>
+<a href="https://seeky-anim.vercel.app"><img src="https://img.shields.io/badge/Seeky.Anim-00f5ff?style=for-the-badge&logo=vercel&logoColor=black" /></a>
+
+<img src="./assets/divider.svg" width="100%" />
+
+## 🌸 About Me
+
 </div>
 
 <div align="center">
 
-# 🌸 About Me
-
-Hey! I'm Tarun 👋
-
-I'm a **student and full-stack developer** who loves turning ideas into real apps.
-Desktop, Android, web, CLI tools and Discord bots, I build all of them,
-usually with **AI as my pair programmer** and a lot of **anime-inspired design**.
-
-<table border="0" cellspacing="0" cellpadding="8">
-  <tr>
-    <td>🎵 <b>Seeky</b></td>
-    <td>building music and anime apps people actually download</td>
-  </tr>
-  <tr>
-    <td>🤖 <b>AI Tools</b></td>
-    <td>coding companions, CLI agents and chat apps</td>
-  </tr>
-  <tr>
-    <td>🎨 <b>Aesthetics</b></td>
-    <td>glassmorphism, themes, sakura petals and clean UI</td>
-  </tr>
-  <tr>
-    <td>🔓 <b>Open Source</b></td>
-    <td>I like free, open tools and sharing what I build</td>
-  </tr>
-  <tr>
-    <td>🐧 <b>Fedora</b></td>
-    <td>daily driver, Hyprland rice and all</td>
-  </tr>
-</table>
-
-*Vibe code it. Ship it. Make it pretty.* ✨
+Hey! I'm **Tarun** 👋
+A student and full-stack developer who turns ideas into real apps.
+Desktop, Android, web, CLI tools and Discord bots, with **AI as my pair programmer**
+and a whole lot of **anime-inspired design**.
 
 </div>
 
----
+```ts
+const tarun = {
+  role: "Student & Full-Stack Developer",
+  building: ["Seeky", "Buddy.live", "Seeky.Anim"],
+  stack: ["React", "Electron", "Capacitor", "Node.js"],
+  os: "Fedora Linux 🐧",
+  aesthetic: "sakura x cyan 🌸",
+  loves: ["anime", "glassmorphism", "open source"],
+  workflow: "vibe code → ship → make it pretty",
+  funFact: "400+ people downloaded an app I vibe coded 🎉",
+};
+```
 
 <div align="center">
 
-## 🌐 Connect With Me
-
-<a href="https://github.com/tarun922" target="_blank">
-  <img src="https://skillicons.dev/icons?i=github&theme=dark" />
-</a>
-<a href="https://tarun922.github.io/seeky" target="_blank">
-  <img src="https://img.shields.io/badge/Seeky-ff8fb8?style=for-the-badge&logo=musicbrainz&logoColor=white" />
-</a>
-<a href="https://seeky-anim.vercel.app" target="_blank">
-  <img src="https://img.shields.io/badge/Seeky.Anim-00f5ff?style=for-the-badge&logo=vercel&logoColor=black" />
-</a>
-
-</div>
-
----
-
-<div align="center">
+<img src="./assets/divider.svg" width="100%" />
 
 ## 💻 Tech Stack
 
-### 🧑‍💻 Languages
+**🧑‍💻 Languages**
 
 <img src="https://skillicons.dev/icons?i=js,ts,python,cpp,c&theme=dark" />
 
-### 🌐 Web & Apps
+**🌐 Web & Apps**
 
 <img src="https://skillicons.dev/icons?i=react,redux,nodejs,electron,tailwind,vite&theme=dark" />
 
 ![Capacitor](https://img.shields.io/badge/Capacitor-119EFF?style=for-the-badge&logo=capacitor&logoColor=white)
 ![Hono](https://img.shields.io/badge/Hono-E36002?style=for-the-badge&logo=hono&logoColor=white)
 
-### ☁️ Backend & Cloud
+**☁️ Backend & Cloud**
 
 <img src="https://skillicons.dev/icons?i=firebase,cloudflare,vercel,docker,mysql&theme=dark" />
 
-### ⚙️ Tools
+**⚙️ Tools**
 
 <img src="https://skillicons.dev/icons?i=git,github,vscode,linux,fedora&theme=dark" />
 
-### 🤖 AI Providers I Work With
+**🤖 AI Providers I Work With**
 
 ![OpenRouter](https://img.shields.io/badge/OpenRouter-6467F2?style=flat-square)
 ![NVIDIA NIM](https://img.shields.io/badge/NVIDIA%20NIM-76B900?style=flat-square&logo=nvidia&logoColor=white)
@@ -96,11 +75,7 @@ usually with **AI as my pair programmer** and a lot of **anime-inspired design**
 ![Gemini](https://img.shields.io/badge/Gemini-8E75B2?style=flat-square&logo=googlegemini&logoColor=white)
 ![Groq](https://img.shields.io/badge/Groq-F55036?style=flat-square)
 
-</div>
-
----
-
-<div align="center">
+<img src="./assets/divider.svg" width="100%" />
 
 ## 🚀 Projects
 
@@ -207,39 +182,30 @@ scroll-driven 3D sakura animation.
 </tr>
 </table>
 
-</div>
-
----
-
-<div align="center">
+<img src="./assets/divider.svg" width="100%" />
 
 ## 📊 GitHub Stats
 
-![](https://github-readme-stats.shion.dev/api?username=tarun922&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&show_icons=true)
+<img height="180" src="https://github-readme-stats.shion.dev/api?username=tarun922&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&show_icons=true" />
+<img height="180" src="https://github-readme-stats.shion.dev/api/top-langs/?username=tarun922&theme=tokyonight&hide_border=true&layout=compact" />
 
-<br/>
+<img src="https://streak-stats.demolab.com/?user=tarun922&theme=tokyonight&hide_border=true" />
 
-![](https://streak-stats.demolab.com/?user=tarun922&theme=tokyonight&hide_border=true)
+**🏆 Trophies**
 
-<br/>
+<img src="https://github-profile-trophy.vercel.app/?username=tarun922&theme=onedark&no-frame=true&no-bg=true&row=1&column=7" />
 
-![](https://github-readme-stats.shion.dev/api/top-langs/?username=tarun922&theme=tokyonight&hide_border=true&layout=compact)
+**📈 Activity Graph**
 
-</div>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=tarun922&bg_color=0d0d0d&color=ff8fb8&line=00f5ff&point=ffffff&area=true&hide_border=true" width="100%" />
 
----
+<img src="./assets/divider.svg" width="100%" />
 
-<div align="center">
+## 🐍 Contribution Snake
 
-## 🐍 My Contribution Snake
+<img src="https://raw.githubusercontent.com/tarun922/tarun922/output/github-snake-dark.svg" width="100%" />
 
-![snake](https://raw.githubusercontent.com/tarun922/tarun922/output/github-snake-dark.svg)
-
-</div>
-
----
-
-<div align="center">
+<img src="./assets/divider.svg" width="100%" />
 
 ## 🗺️ Currently On
 
@@ -255,6 +221,8 @@ Anime compositing tools
 More open source 🌸
 ```
 
-![footer](https://capsule-render.vercel.app/api?type=waving&color=0:0d0d0d,50:ff8fb8,100:00f5ff&height=120&section=footer)
+<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" />
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d0d0d,50:ff8fb8,100:00f5ff&height=120&section=footer" width="100%" />
 
 </div>
